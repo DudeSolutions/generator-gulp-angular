@@ -23,6 +23,12 @@
         "description": "AngularJS 1.2+ native directives for Bootstrap 3.",
         "logo": "angular-strap.png"
     },
+    "angular-translate": {
+        "title": "Angular Translate",
+        "url": "https://angular-translate.github.io/",
+        "description": "18n for your Angular apps, made easy",
+        "logo": "angular-strap.png"
+    },
     "angular-material": {
         "title": "Angular Material Design",
         "url": "https://material.angularjs.org/#/",

@@ -19,7 +19,8 @@ module.exports = function(GulpAngularGenerator) {
       this.props.foundationComponents.key,
       this.props.cssPreprocessor.key,
       this.props.jsPreprocessor.key,
-      this.props.htmlPreprocessor.key
+      this.props.htmlPreprocessor.key,
+      this.props.translate.key
     ])
       .filter(_.isString)
       .filter(function(tech) {
@@ -37,7 +38,7 @@ module.exports = function(GulpAngularGenerator) {
       .replace(/\n/g, '\n    ');
 
     usedTechs.forEach(function(value) {
-      var path ='src/assets/images/' + listTechs[value].logo;
+      var path ='src/assets/images/' + listTechs[value].logo || '';
 
       this.files.push({
         src: path,

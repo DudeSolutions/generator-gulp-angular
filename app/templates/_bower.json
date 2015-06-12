@@ -12,6 +12,8 @@
     "angular-touch": "<%- props.angularVersion %>",
 <% } if (angularModulesObject.sanitize) { -%>
     "angular-sanitize": "<%- props.angularVersion %>",
+<% } if (props.translate.key) { -%>
+    "angular-translate": "~2.7.2",
 <% } if (props.jQuery.key === 'jquery1') { -%>
     "jquery": "~1.11.3",
 <% } if (props.jQuery.key === 'jquery2') { -%>

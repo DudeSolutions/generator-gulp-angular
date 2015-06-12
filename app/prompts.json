@@ -142,6 +142,27 @@
   },
   {
     "type": "list",
+    "name": "translate",
+    "message": "Would you like to use a Translate service?",
+    "choices": [
+      {
+        "value": {
+          "key": "angular-translate",
+          "module": "pascalprecht.translate"
+        },
+        "name": "Angular Translate"
+      },
+      {
+        "value": {
+          "key": "none",
+          "module": null
+        },
+        "name": "None"
+      }
+    ]
+  },
+  {
+    "type": "list",
     "name": "ui",
     "message": "Which UI framework do you want?",
     "choices": [
